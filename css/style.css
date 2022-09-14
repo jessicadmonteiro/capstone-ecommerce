@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+:root {
+    --color05: #F5F5F5;
+    --color01: #2E245E;
+    --color02: #37268C;
+    --color03: #333333;
+    --color04: #828282;
+    --fonte:'Inter', sans-serif;
+}
+body{
+    font-family: var(--fonte);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.11);
+    padding: 7px;
+    padding-top: 20px;
+}
+header > img{
+    margin-top: -10px;
+}
+nav > a{
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #2E245E;
+}
+nav > a:hover{
+    color: var(--color04);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.containerSecaoPrincipal{
+    width: 75%;
+}
+.secaoCamisetas{
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+}
+.secaoAcessorio{
+    display: flex;
+    list-style: none;
+    overflow-x: auto; 
+}
+
+.produto{
+    width: 250px;
+    height: 375px;
+    background-color: rgba(169, 169, 169, 0.226);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.produto:hover{
+    border: solid 1px #37268C;
+}
+.categoria{
+    font-size: 10px;
+    color: var(--color02);
+}
+.produto > h3{
+    text-align: center;
+    font-size: 20px;
+}
+.produto > p {
+    font-size: 14px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+}
+.valorDoProduto{
+    text-align: center;
+    font-size: 16px;
+    color: var(--color02);
+}
+
+.botaoAdicionarCarrinho{
+    padding: 8px;
+    margin-left: 30px;
+    background-color: var(--color01);
+    color: var(--color05);
+    border-radius: 5px;
+    border: transparent;
+}
+.botaoAdicionarCarrinho:hover{
+    color: var(--color01);
+    background-color: var(--color05);
+    border: solid 1px;
+}
+
+.containerCarrinho{
+    margin-top: 15px;
+    width: 310px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.pesquisaDeProduto{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisaDeProduto > input{
+    padding: 10px;
+    text-align: center;
+}
+.pesquisaDeProduto > button{
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color01);
+    color: var(--color05);
+    border: transparent;
+}
+.pesquisaDeProduto > button:hover{
+    background-color: var(--color05);
+    color: var(--color01);
+    border: solid 1px var(--color01);
+}
+
+.carrinhoDeCompras > h4 {
+    width: 100%;
+    text-align: center;
+    background-color: var(--color01);
+    color: var(--color05);
+    padding: 10px 0px;
+    margin-bottom: -2px;
+}
+
+.carrinhoDeCompras > h3{
+    text-align: center;
+}
+.carrinhoDeCompras > p{
+    text-align: center;
+}
+.carrinhoVazio{
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.226);
+    margin: 0%;
+    padding: 1px;
+}
+.adicionarProduto{
+    height: 300px;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: auto;
+    background-color: rgba(169, 169, 169, 0.226);
+}
+.produtosDoCarrinho{
+    width: 100%;
+    display: flex;
+    background-color: var(--color05);
+    margin-bottom: 5px;
+}
+.imgProdutoCarrinho > img{
+    width:97px;
+    height: 45px;
+    margin-top: 15px;
+    
+}
+.detalhesProdutoCarrinho > h3{
+    font-size: 12px;
+}
+.detalhesProdutoCarrinho > h4{
+    font-size: 10px;
+    color: var(--color02)
+}
+.removerProdutoCarrinho{
+    font-size: 10px;
+    margin-bottom: 12px;
+    background-color: var(--color01);
+    color: var(--color05);
+    border-radius: 1px;
+    border: transparent;
+}
+.removerProdutoCarrinho:hover{
+    color: var(--color01);
+    background-color: var(--color05);
+    border: solid 1px;
+}
+.valorDosProdutos{
+    background-color: var(--color03);
+    padding: 5px;
+    margin-top: -10px;
+    font-size: 14px;
+    color: var(--color05);
+}
+
+#quantidadeProduto{
+    margin-left: 60%;
+}
+#valorTotal{
+    margin-left: 63%;
+}

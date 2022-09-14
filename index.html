@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Loja Weartake</title>
+</head>
+<body>
+    <header>
+       <img src="img/logo.jpeg" alt="Logo da marca" width="200px" >
+        <nav>
+            <a href=""><strong>Todos</strong></a>
+            <a href=""><strong>Acessórios</strong></a>
+            <a href=""><strong>Bolsas</strong></a>
+            <a href=""><strong>Camisetas</strong></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="containerSecaoPrincipal">
+            <main>
+                <section>
+                    <ul class="secaoCamisetas">
+                    </ul>
+                </section>
+                <section>
+                    <ul class="secaoAcessorio">
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <div class="containerCarrinho">
+            <aside>
+                <div class="pesquisaDeProduto">
+                    <input type="text" placeholder="Digite aqui sua pesquisa">
+                    <button>Pesquisar</button>
+                </div>
+                <section class="carrinhoDeCompras">
+                    <h4>Carrinho de compras</h4>
+                        <div class="carrinhoVazio">
+                            <h4>Carrinho vázio</h4>
+                            <p>Adicione itens</p>
+                        </div>
+                    <ul class="adicionarProduto">
+                    </ul>
+                </section>
+                <section class="valorDosProdutos">
+                    <div>
+                        <h4>Quantidade: <small id="quantidadeProduto">0</small></h4>
+                        <h4>Total: <small id="valorTotal">R$ 0.00</small></h4>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+    <script src="js/database.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
